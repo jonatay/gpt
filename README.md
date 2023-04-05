@@ -77,6 +77,7 @@ Sure! Here's some JavaScript code to generate a random South African ID number:
 
 javascript
 
+```
 function generateSAIDNumber() {
   // Generate a random birth date between 1 January 1900 and today
   var birthDate = new Date(1900 + Math.floor(Math.random() * 100), Math.floor(Math.random() * 12), Math.floor(Math.random() * 28) + 1);
@@ -115,6 +116,7 @@ function calculateChecksumDigit(idNumberWithoutChecksum) {
   }
   return checksum.toString();
 }
+```
 
 This code defines two functions: generateSAIDNumber() and calculateChecksumDigit(idNumberWithoutChecksum).
 
