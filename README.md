@@ -5,7 +5,9 @@ all things gpt
 
 query:
 ```
-Generate a SQL Insert statement of 20 Employees with the following columns: [field-name:'Name', contents:(Employee name)],[field-name:'Id',contents: (South African ID number (see:https://www.checkid.co.za/frequently-asked-questions))]
+Generate a SQL Insert statement of 20 Employees with the following columns: 
+    [field-name:'Name', contents:(Employee name)],
+    [field-name:'Id',contents: (South African ID number (see:https://www.checkid.co.za/frequently-asked-questions))]
 ```
 
 Here's an example SQL Insert statement for 20 employees with the columns "Name" and "Id":
@@ -35,7 +37,10 @@ VALUES
 ```
 Please note that the table "Employees" must exist before running this SQL statement, and the values for Name and Id should be replaced with the actual employee names and South African ID numbers.
 
-jono: `generate the create table script`
+query: 
+```
+generate the create table script
+```
 
 Sure, here's an example SQL script to create a table named "Employees" with the "Name" and "Id" columns:
 ```sql
@@ -47,8 +52,11 @@ CREATE TABLE Employees (
 This script will create a table with two columns: "Name" and "Id". The "Name" column is of type VARCHAR(255) which means it can store up to 255 characters, and the "Id" column is of type VARCHAR(13) which means it can store up to 13 characters (South African ID numbers are 13 digits long). The "NOT NULL" constraint ensures that both columns must have a value and cannot be left blank.
 
 Please note that this script assumes you are using MySQL as your database management system. The syntax may vary depending on the specific database software you are using.
-Jonathan Taylor
+
+query:
+```
 make the id column primary index and regenerate
+```
 
 Sure, here's the modified SQL script that creates the "Employees" table with the "Id" column as the primary key:
 ```sql
@@ -65,8 +73,11 @@ ALTER TABLE Employees
 ADD PRIMARY KEY (Id);
 ```
 This script assumes that you already have an "Employees" table with an "Id" column. The ALTER TABLE statement adds a primary key constraint to the "Id" column, which will make it the primary key of the table.
-Jonathan Taylor
+
+query:
+```
 create js code to create sample south african id number
+```
 
 Sure! Here's some JavaScript code to generate a random South African ID number:
 
