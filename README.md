@@ -2,13 +2,12 @@
 all things gpt
 
 #Sample Data (chat-GPT-Mar-23-Version)
-
-Generate a SQL Insert statement of 20 Employees with the following columns: [field-name:'Name', contents:(Employee name)],[field-name:'Id',contents: (South African ID number (see:https://www.checkid.co.za/frequently-asked-questions))]
+jono:
+```Generate a SQL Insert statement of 20 Employees with the following columns: [field-name:'Name', contents:(Employee name)],[field-name:'Id',contents: (South African ID number (see:https://www.checkid.co.za/frequently-asked-questions))]
+```
 
 Here's an example SQL Insert statement for 20 employees with the columns "Name" and "Id":
-
-sql
-```
+```sql
 INSERT INTO Employees (Name, Id)
 VALUES 
 ('John Smith', '8001015009087'),
@@ -33,13 +32,11 @@ VALUES
 ('Stephanie Wong', '8907111234567');
 ```
 Please note that the table "Employees" must exist before running this SQL statement, and the values for Name and Id should be replaced with the actual employee names and South African ID numbers.
-Jonathan Taylor
-generate the create table script
+
+jono: `generate the create table script`
 
 Sure, here's an example SQL script to create a table named "Employees" with the "Name" and "Id" columns:
-
-sql
-```
+```sql
 CREATE TABLE Employees (
     Name VARCHAR(255) NOT NULL,
     Id VARCHAR(13) NOT NULL
@@ -52,9 +49,7 @@ Jonathan Taylor
 make the id column primary index and regenerate
 
 Sure, here's the modified SQL script that creates the "Employees" table with the "Id" column as the primary key:
-
-sql
-```
+```sql
 CREATE TABLE Employees (
     Name VARCHAR(255) NOT NULL,
     Id VARCHAR(13) PRIMARY KEY
@@ -63,9 +58,7 @@ CREATE TABLE Employees (
 This script creates the same "Employees" table with the "Name" and "Id" columns, but the "Id" column is now specified as the primary key of the table using the PRIMARY KEY keyword. This means that the "Id" column will be unique for each row and can be used to identify each employee uniquely.
 
 Please note that if you already have an existing "Employees" table, you'll need to use the ALTER TABLE statement to modify the table and set the "Id" column as the primary key. Here's an example SQL script to do that:
-
-sql
-```
+```sql
 ALTER TABLE Employees
 ADD PRIMARY KEY (Id);
 ```
@@ -75,9 +68,7 @@ create js code to create sample south african id number
 
 Sure! Here's some JavaScript code to generate a random South African ID number:
 
-javascript
-
-```
+```javascript
 function generateSAIDNumber() {
   // Generate a random birth date between 1 January 1900 and today
   var birthDate = new Date(1900 + Math.floor(Math.random() * 100), Math.floor(Math.random() * 12), Math.floor(Math.random() * 28) + 1);
