@@ -83,7 +83,11 @@ Sure! Here's some JavaScript code to generate a random South African ID number:
 ```javascript
 function generateSAIDNumber() {
   // Generate a random birth date between 1 January 1900 and today
-  var birthDate = new Date(1900 + Math.floor(Math.random() * 100), Math.floor(Math.random() * 12), Math.floor(Math.random() * 28) + 1);
+  var birthDate = new Date(
+        1900 + Math.floor(Math.random() * 100), 
+        Math.floor(Math.random() * 12), 
+        Math.floor(Math.random() * 28) + 1
+     );
   
   // Format the birth date as YYMMDD
   var year = birthDate.getFullYear().toString().substr(-2);
