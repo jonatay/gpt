@@ -75,7 +75,7 @@ This script assumes that you already have an "Employees" table with an "Id" colu
 
 query:
 ```
-create js code to create sample south african id number
+generate js code to create sample south african id number
 ```
 
 Sure! Here's some JavaScript code to generate a random South African ID number:
