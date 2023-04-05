@@ -2,10 +2,6 @@
 # Sample Data 
 ##              (chat-GPT-Mar-23-Version)
 
-
-### Q: Generate a SQL Insert statement of 20 Employees with the following columns: [field-name:'Name', contents:(Employee name)],[field-name:'Id',contents: (South African ID number (see:https://www.checkid.co.za/frequently-asked-questions))]
-
-
 query:
 ```
 Generate a SQL Insert statement of 20 Employees with the following columns: 
